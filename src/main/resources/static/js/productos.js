@@ -54,7 +54,7 @@ function mostrar_product(){
 
     $.ajax({
         method: "GET",
-        url: url_pet+"/api/cleaningproduct/all",
+        url: url_pet+"/api/fragance/all",
         success: function(response){
             console.log(response);
             if(response.length > 0){
@@ -89,7 +89,7 @@ function mostrar_product(){
 function ver_detalle(reference){
     $.ajax({
         method: "GET",
-        url: url_pet+"/api/cleaningproduct/"+reference,
+        url: url_pet+"/api/fragance/"+reference,
         contentType: "application/JSON",
         dataType: "JSON",
         success: function(response){
@@ -171,7 +171,7 @@ function registrar_product(){
 
     $.ajax({
         method: "POST",
-        url: url_pet+"/api/cleaningproduct/new",
+        url: url_pet+"/api/fragance/new",
         contentType: "application/JSON",
         dataType: "JSON",
         data: JSON.stringify(datos),
@@ -239,7 +239,7 @@ function actualizar_product(image){
 
     $.ajax({
         type: "PUT",
-        url: url_pet+"/api/cleaningproduct/update",
+        url: url_pet+"/api/fragance/update",
         contentType: "application/JSON",
         dataType: "JSON",
         data: JSON.stringify(datos),
@@ -263,7 +263,7 @@ function eliminar_product(reference){
 
     $.ajax({
         type: "DELETE",
-        url: url_pet+"/api/cleaningproduct/"+reference,
+        url: url_pet+"/api/fragance/"+reference,
         contentType: "application/JSON",
         dataType: "JSON",
         statusCode: {

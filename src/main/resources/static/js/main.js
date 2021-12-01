@@ -3,7 +3,7 @@ var tabla, tabla1, tabla2, tabla3, session;
 // Variables Globales
 var formulario_login, formulario_register, contenedor_login_register, caja_trasera_login, caja_trasera_register;
 // Variable para guardar la URL de las peticiones
-var url_pet = "http://localhost";
+var url_pet = "http://129.151.121.112";
 
 
 $(document).ready( function () {

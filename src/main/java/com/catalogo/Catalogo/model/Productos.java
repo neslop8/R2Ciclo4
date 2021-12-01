@@ -20,11 +20,9 @@ public class Productos implements Serializable{
 
     @Id
     private String reference;
-    
     private String brand;
     private String category;
-    private String material;
-    private String presentacion;
+    private String presentation;
     private String description;
     private Boolean availability;
     private Float price;
@@ -55,20 +53,12 @@ public class Productos implements Serializable{
         this.category = category;
     }
 
-    public String getMaterial() {
-        return material;
+    public String getPresentation() {
+        return presentation;
     }
 
-    public void setMaterial(String material) {
-        this.material = material;
-    }
-
-    public String getPresentacion() {
-        return presentacion;
-    }
-
-    public void setPresentacion(String presentacion) {
-        this.presentacion = presentacion;
+    public void setPresentation(String presentation) {
+        this.presentation = presentation;
     }
 
     public String getDescription() {
@@ -86,7 +76,7 @@ public class Productos implements Serializable{
     public void setAvailability(Boolean availability) {
         this.availability = availability;
     }
-    
+
     public Float getPrice() {
         return price;
     }
@@ -109,5 +99,6 @@ public class Productos implements Serializable{
 
     public void setPhotography(String photography) {
         this.photography = photography;
-    }    
+    }
+    
 }

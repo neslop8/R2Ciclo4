@@ -54,13 +54,9 @@ public class ServiceProductos {
                 if(productos.getCategory() != null){
                     evt.get().setCategory(productos.getCategory());
                 }
-                
-                if(productos.getMaterial() != null){
-                    evt.get().setMaterial(productos.getMaterial());
-                }
-                
-                if(productos.getPresentacion() != null){
-                    evt.get().setPresentacion(productos.getPresentacion());
+              
+                if(productos.getPresentation() != null){
+                    evt.get().setPresentation(productos.getPresentation());
                 }
                 
                 if(productos.getDescription() != null){
